@@ -15,7 +15,6 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.bumptech.glide.Glide;
 
 import org.w3c.dom.Text;
 
@@ -171,13 +170,7 @@ public class Home_Page extends AppCompatActivity {
     }
 
 
-    private void setImage(int z) {
 
-        Glide.with(Home_Page.this)
-                .load(image1[z])
-                .into(one_img);
-
-    }
 
     public static int randomDiceValue() {
         return RANDOM.nextInt(6) + 1;
